@@ -4,28 +4,26 @@ import FadeIn from "../../components/FadeIn";
 import ImageLightbox from "../../components/ImageLightbox";
 
 export const metadata: Metadata = {
-  title: "SchoolOga",
+  title: "Healthcare Network",
   description:
-    "Accountability infrastructure for private schools. Pattern-based staff accountability, fee intelligence, and real-time financial visibility.",
+    "Full-stack healthcare coordination platform with end-to-end financial integration.",
   openGraph: {
-    title: "SchoolOga — Striat",
-    description: "Accountability infrastructure for private schools.",
+    title: "Healthcare Network — Striat",
+    description:
+      "Full-stack healthcare coordination platform with end-to-end financial integration.",
   },
 };
 
 const sidebar = [
-  { label: "Role", value: "Product (Striat-built and owned)" },
-  {
-    label: "Stack",
-    value:
-      "Next.js 14, Express, MongoDB, BullMQ, Upstash Redis, Paystack, Cloudinary, WhatsApp Business API",
-  },
-  { label: "Scale", value: "Live with active school operations" },
-  { label: "Reach", value: "Nigerian private school network" },
-  { label: "Status", value: "Live · Onboarding new schools" },
+  { label: "Role", value: "Full-stack engineering, frontend and backend" },
+  { label: "Stack", value: "TypeScript, Node.js, Sequelize, PostgreSQL, QuickBooks API, React" },
+  { label: "Domain", value: "Healthcare (regulated)" },
+  { label: "Scope", value: "Patient portal + admin dashboard + clinical workflow + finance" },
+  { label: "Status", value: "Live in production" },
+  { label: "Client", value: "Confidential under engagement agreement" },
 ];
 
-export default function SchoolOgaPage() {
+export default function HealthcareNetworkPage() {
   return (
     <>
       {/* Hero */}
@@ -41,16 +39,17 @@ export default function SchoolOgaPage() {
 
         <FadeIn delay={0.05}>
           <p className="font-mono text-xs text-[#52525B] uppercase tracking-widest mb-4">
-            PRODUCT · 2026 · LIVE · A STRIAT PRODUCT
+            CLIENT · 2025 · CONFIDENTIAL
           </p>
           <h1
             className="font-sans font-medium text-[#F4F4F5] tracking-tight mb-4"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4rem)" }}
           >
-            SchoolOga
+            Healthcare Network
           </h1>
           <p className="text-2xl text-[#A1A1AA] leading-relaxed max-w-2xl">
-            Accountability infrastructure for private schools
+            Full-stack healthcare coordination platform with end-to-end
+            financial integration
           </p>
         </FadeIn>
       </section>
@@ -59,9 +58,9 @@ export default function SchoolOgaPage() {
       <section className="px-6 md:px-12 max-w-[1280px] mx-auto mb-16">
         <FadeIn>
           <ImageLightbox
-            src="/screenshots/schoologa-pattern.png"
-            alt="SchoolOga pattern detection page"
-            caption="Pattern-based staff accountability — automated detection of lateness, GPS mismatches, and lesson note gaps"
+            src="/screenshots/healthcare-admin.jpg"
+            alt="Healthcare network admin revenue dashboard"
+            caption="Admin revenue dashboard with real-time financial tracking and QuickBooks reconciliation"
           />
         </FadeIn>
       </section>
@@ -77,11 +76,11 @@ export default function SchoolOgaPage() {
                   Context
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
-                  Private schools across Nigeria run on paper, WhatsApp groups,
-                  and manual tracking. Owners cannot see staff attendance in real
-                  time. Fee collection is opaque and delayed. Accountability
-                  fails at the layer that matters most — whether teachers
-                  actually showed up, taught, and submitted lesson notes.
+                  A private healthcare network in Nigeria needed a complete
+                  coordination platform connecting patients, doctors,
+                  sonography, lab technicians, and back-office finance. Previous
+                  developers had only delivered ten to twenty percent of the
+                  system before the project stalled.
                 </p>
               </div>
             </FadeIn>
@@ -92,12 +91,14 @@ export default function SchoolOgaPage() {
                   The challenge
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
-                  Build a system that gives school owners genuine visibility into
-                  the day-to-day operations of their schools — not a dashboard
-                  that shows surface metrics, but an infrastructure layer that
-                  detects bad patterns, flags exceptions, and forces
-                  accountability without requiring the owner to be physically
-                  present.
+                  Striat was brought in to take ownership of the entire build and
+                  deliver a production system. The platform needed to handle the
+                  full clinical workflow — patient appointment requests, doctor
+                  scheduling, lab and imaging coordination, staff management,
+                  role-based access across clinical and administrative tiers —
+                  and integrate directly with the network&apos;s existing QuickBooks
+                  accounting system for revenue tracking, invoice management, and
+                  financial reporting.
                 </p>
               </div>
             </FadeIn>
@@ -108,80 +109,65 @@ export default function SchoolOgaPage() {
                   The work
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed mb-6">
-                  SchoolOga is a Striat product, designed and built end-to-end.
-                  The platform combines three core modules into a single
-                  operating layer for school owners.
+                  Striat single-handedly delivered both the frontend and backend
+                  to completion, taking the project from twenty percent done to
+                  live production.
                 </p>
                 <p className="font-mono text-xs text-[#52525B] uppercase tracking-widest mb-4">
                   Key systems delivered
                 </p>
                 <ul className="space-y-4">
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
-                    <strong className="text-[#F4F4F5]">
-                      Pattern-based staff accountability
-                    </strong>{" "}
-                    — automated detection of consistent lateness, location
-                    mismatches via GPS verification, lesson note gaps, and admin
-                    override attempts. Severity tiers (warning, critical) with
-                    resolution workflow.
+                    <strong className="text-[#F4F4F5]">Patient portal</strong>{" "}
+                    — appointment booking, medical record access, test result
+                    delivery, and patient login.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Fee intelligence
+                      Clinical workflow
                     </strong>{" "}
-                    — term collection tracking, cash flow projection at current
-                    pace, outstanding balance management with class and sibling
-                    grouping, automated parent reminders via WhatsApp and SMS
-                    fallback.
+                    — doctor schedules, sonography coordination, lab tech
+                    routing, multi-stage care pathways.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Real-time owner dashboard
+                      Staff management
                     </strong>{" "}
-                    — daily collection totals, staff present count, term
-                    progress, recent activity feed with auto-refresh.
+                    — role-based access for doctors, nurses, lab techs,
+                    sonographers, admin staff, and ownership tier.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Multi-role access
+                      Financial integration
                     </strong>{" "}
-                    — owner, principal, head teacher, secretary, with
-                    role-scoped permissions and audit logging on every sensitive
-                    action.
+                    — direct QuickBooks API integration for invoice creation,
+                    payment tracking, revenue reporting, and reconciliation.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      WhatsApp-first communication
+                      Real-time admin dashboard
                     </strong>{" "}
-                    — primary channel for fee reminders and notifications, with
-                    seamless SMS fallback when WhatsApp delivery is unavailable.
+                    — total revenue tracking, daily/weekly/monthly breakdowns,
+                    paid versus pending invoices, critical alerts, and inventory
+                    monitoring.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Paystack payments
+                      Notification system
                     </strong>{" "}
-                    — direct subscription billing for schools, parent fee
-                    collection with reconciliation back to the platform.
+                    — multi-channel alerts for appointments, payments, and
+                    operational events.
                   </li>
                 </ul>
               </div>
             </FadeIn>
 
-            {/* Inline screenshot: dashboard */}
+            {/* Inline screenshot: patient portal */}
             <FadeIn delay={0.12}>
               <ImageLightbox
-                src="/screenshots/schoologa-dashboard.png"
-                alt="SchoolOga owner dashboard"
-                caption="Real-time owner dashboard with daily collection totals and staff tracking"
-              />
-            </FadeIn>
-
-            {/* Inline screenshot: fees */}
-            <FadeIn delay={0.13}>
-              <ImageLightbox
-                src="/screenshots/schoologa-fees.png"
-                alt="SchoolOga fee intelligence module"
-                caption="Fee intelligence module with collection tracking and cash flow projection"
+                src="/screenshots/healthcare-portal.jpg"
+                alt="Anonymized patient portal interface"
+                caption="Anonymized patient portal — appointment booking, medical records, and test result delivery"
               />
             </FadeIn>
 
@@ -191,10 +177,10 @@ export default function SchoolOgaPage() {
                   The outcome
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
-                  Live in production with first beta school onboarded. Tracking
-                  ₦6.4M+ in term fees, monitoring 67 outstanding accounts, and
-                  active staff pattern detection across multiple roles.
-                  Go-to-market through NAPPS Lagos referral network.
+                  Live in production. Tracked revenue of multiple millions of
+                  naira through the integrated invoicing system. QuickBooks
+                  reconciliation active. Operating across the network&apos;s clinical
+                  and administrative teams.
                 </p>
               </div>
             </FadeIn>
@@ -219,14 +205,9 @@ export default function SchoolOgaPage() {
                   <p className="font-mono text-xs text-[#52525B] uppercase tracking-widest mb-1.5">
                     Link
                   </p>
-                  <a
-                    href="https://schoologa.tech"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-underline font-sans text-sm text-[#7CFFB2] hover:text-[#5DEBA0] transition-colors duration-200"
-                  >
-                    schoologa.tech →
-                  </a>
+                  <p className="font-sans text-sm text-[#52525B] italic">
+                    Not public — confidential
+                  </p>
                 </div>
               </div>
             </aside>
@@ -236,12 +217,12 @@ export default function SchoolOgaPage() {
         {/* Next case study */}
         <FadeIn delay={0.1}>
           <div className="mt-20 pt-10 border-t border-[#1F1F23]">
-            <Link href="/work/daily-manna" className="group block">
+            <Link href="/work/schoologa" className="group block">
               <span className="font-mono text-xs text-[#52525B] uppercase tracking-widest">
                 Next case study
               </span>
               <p className="font-sans font-medium text-2xl text-[#F4F4F5] tracking-tight mt-2 group-hover:text-[#7CFFB2] transition-colors duration-200">
-                Daily Manna →
+                SchoolOga →
               </p>
             </Link>
           </div>

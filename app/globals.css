@@ -73,6 +73,16 @@ body {
   width: 100%;
 }
 
+/* Pulsing dot animation */
+@keyframes pulse-mint {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.pulse-dot {
+  animation: pulse-mint 2s ease-in-out infinite;
+}
+
 /* Selection */
 ::selection {
   background: #7CFFB2;

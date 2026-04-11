@@ -21,12 +21,21 @@ export const metadata: Metadata = {
     template: "%s — Striat",
   },
   description:
-    "Striat is a technical studio. We design and ship production-ready systems for founders and operators who need software that survives growth.",
+    "Striat is a small, senior engineering studio. We build production systems for founders and operators who need software that holds up under real load.",
   metadataBase: new URL("https://striat.dev"),
   openGraph: {
     siteName: "Striat",
     locale: "en_US",
     type: "website",
+    title: "Striat — Software Infrastructure Studio",
+    description:
+      "Senior engineering studio. Production systems that survive growth.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Striat — Software Infrastructure Studio",
+    description:
+      "Senior engineering studio. Production systems that survive growth.",
   },
 };
 
@@ -38,6 +47,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-[#0A0A0B] text-[#F4F4F5]">

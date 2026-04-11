@@ -1,12 +1,12 @@
 interface SectionLabelProps {
-  children: string;
+  children: React.ReactNode;
   className?: string;
 }
 
 export default function SectionLabel({ children, className = "" }: SectionLabelProps) {
   return (
     <span
-      className={`font-mono text-xs uppercase tracking-widest text-[#52525B] ${className}`}
+      className={`font-mono text-xs uppercase tracking-[0.2em] text-[#7CFFB2] ${className}`}
     >
       {children}
     </span>

@@ -3,26 +3,25 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, email, company, projectType, timeline, budget, message } =
-      body;
+    const { name, email, company, location, message, engagementType, timeline, investment } = body;
 
-    // Basic validation
-    if (!name || !email || !projectType || !timeline || !budget || !message) {
+    if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
       );
     }
 
-    // Log to console for now — wire to Resend or Formspree later
+    // Log to console for now — wire to Resend later
     console.log("Contact form submission:", {
       name,
       email,
       company,
-      projectType,
-      timeline,
-      budget,
+      location,
       message,
+      engagementType,
+      timeline,
+      investment,
       receivedAt: new Date().toISOString(),
     });
 

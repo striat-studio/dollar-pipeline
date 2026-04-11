@@ -1,31 +1,30 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SectionLabel from "../../components/SectionLabel";
 import FadeIn from "../../components/FadeIn";
 import ImageLightbox from "../../components/ImageLightbox";
 
 export const metadata: Metadata = {
-  title: "SchoolOga",
+  title: "Daily Manna",
   description:
-    "Accountability infrastructure for private schools. Pattern-based staff accountability, fee intelligence, and real-time financial visibility.",
+    "Backend infrastructure for a global Bible devotional platform serving millions of users daily across every continent.",
   openGraph: {
-    title: "SchoolOga — Striat",
-    description: "Accountability infrastructure for private schools.",
+    title: "Daily Manna — Striat",
+    description:
+      "Backend infrastructure for a global Bible devotional platform.",
   },
 };
 
 const sidebar = [
-  { label: "Role", value: "Product (Striat-built and owned)" },
-  {
-    label: "Stack",
-    value:
-      "Next.js 14, Express, MongoDB, BullMQ, Upstash Redis, Paystack, Cloudinary, WhatsApp Business API",
-  },
-  { label: "Scale", value: "Live with active school operations" },
-  { label: "Reach", value: "Nigerian private school network" },
-  { label: "Status", value: "Live · Onboarding new schools" },
+  { label: "Role", value: "Backend architecture and full implementation" },
+  { label: "Stack", value: "Node.js, Express, MongoDB, Mongoose, Nodemailer, scheduled jobs" },
+  { label: "Scale", value: "Millions of daily active users" },
+  { label: "Languages", value: "12+" },
+  { label: "Status", value: "Live in production" },
+  { label: "Reach", value: "Global" },
 ];
 
-export default function SchoolOgaPage() {
+export default function DailyMannaPage() {
   return (
     <>
       {/* Hero */}
@@ -41,16 +40,16 @@ export default function SchoolOgaPage() {
 
         <FadeIn delay={0.05}>
           <p className="font-mono text-xs text-[#52525B] uppercase tracking-widest mb-4">
-            PRODUCT · 2026 · LIVE · A STRIAT PRODUCT
+            FLAGSHIP · 2025 · LIVE
           </p>
           <h1
             className="font-sans font-medium text-[#F4F4F5] tracking-tight mb-4"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4rem)" }}
           >
-            SchoolOga
+            Daily Manna
           </h1>
           <p className="text-2xl text-[#A1A1AA] leading-relaxed max-w-2xl">
-            Accountability infrastructure for private schools
+            Backend infrastructure for a global Bible devotional platform
           </p>
         </FadeIn>
       </section>
@@ -59,9 +58,9 @@ export default function SchoolOgaPage() {
       <section className="px-6 md:px-12 max-w-[1280px] mx-auto mb-16">
         <FadeIn>
           <ImageLightbox
-            src="/screenshots/schoologa-pattern.png"
-            alt="SchoolOga pattern detection page"
-            caption="Pattern-based staff accountability — automated detection of lateness, GPS mismatches, and lesson note gaps"
+            src="/screenshots/dailymanna-home.png"
+            alt="Daily Manna homepage with 12-language selector"
+            caption="Daily Manna homepage showing the 12+ language selector and multi-tier devotional navigation"
           />
         </FadeIn>
       </section>
@@ -77,11 +76,11 @@ export default function SchoolOgaPage() {
                   Context
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
-                  Private schools across Nigeria run on paper, WhatsApp groups,
-                  and manual tracking. Owners cannot see staff attendance in real
-                  time. Fee collection is opaque and delayed. Accountability
-                  fails at the layer that matters most — whether teachers
-                  actually showed up, taught, and submitted lesson notes.
+                  Daily Manna is the global devotional platform of Deeper Life
+                  Bible Church, one of the largest Pentecostal church networks in
+                  the world. The previous version ran on WordPress and could not
+                  handle the scale of millions of daily users across every
+                  continent.
                 </p>
               </div>
             </FadeIn>
@@ -92,12 +91,14 @@ export default function SchoolOgaPage() {
                   The challenge
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
-                  Build a system that gives school owners genuine visibility into
-                  the day-to-day operations of their schools — not a dashboard
-                  that shows surface metrics, but an infrastructure layer that
-                  detects bad patterns, flags exceptions, and forces
-                  accountability without requiring the owner to be physically
-                  present.
+                  The platform needed to be rebuilt from the ground up — a
+                  backend that could serve a global audience reading devotionals,
+                  completing daily Bible plans, joining community groups, and
+                  tracking progress across multiple devotional series for adults,
+                  youth, and children. It had to support over twelve languages,
+                  sustained traffic at backend capacity, and a content workflow
+                  that allowed administrators across regions to upload and manage
+                  devotionals at scale.
                 </p>
               </div>
             </FadeIn>
@@ -108,9 +109,10 @@ export default function SchoolOgaPage() {
                   The work
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed mb-6">
-                  SchoolOga is a Striat product, designed and built end-to-end.
-                  The platform combines three core modules into a single
-                  operating layer for school owners.
+                  Striat designed and built the entire backend from scratch —
+                  single-handedly — replacing the legacy WordPress system with a
+                  modern Node.js and MongoDB architecture serving both the web
+                  platform and the mobile app from a single API.
                 </p>
                 <p className="font-mono text-xs text-[#52525B] uppercase tracking-widest mb-4">
                   Key systems delivered
@@ -118,70 +120,65 @@ export default function SchoolOgaPage() {
                 <ul className="space-y-4">
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Pattern-based staff accountability
+                      Multi-tier devotional engine
                     </strong>{" "}
-                    — automated detection of consistent lateness, location
-                    mismatches via GPS verification, lesson note gaps, and admin
-                    override attempts. Severity tiers (warning, critical) with
-                    resolution workflow.
+                    — Daily Manna for adults, Higher Everyday for youth, Sincere
+                    Milk for children, with separate content workflows and
+                    reading paths.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Fee intelligence
+                      Bible reading plan system
                     </strong>{" "}
-                    — term collection tracking, cash flow projection at current
-                    pace, outstanding balance management with class and sibling
-                    grouping, automated parent reminders via WhatsApp and SMS
-                    fallback.
+                    — structured multi-week plans with subscription tracking,
+                    progress persistence, and resume-where-you-left-off logic
+                    across devices.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Real-time owner dashboard
+                      Community groups (MannaHaven)
                     </strong>{" "}
-                    — daily collection totals, staff present count, term
-                    progress, recent activity feed with auto-refresh.
+                    — users can form groups with friends, share progress, and
+                    engage around devotional content.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Multi-role access
+                      Internationalization
                     </strong>{" "}
-                    — owner, principal, head teacher, secretary, with
-                    role-scoped permissions and audit logging on every sensitive
-                    action.
+                    — full support for twelve-plus languages including Arabic,
+                    Bengali, Chinese, French, Hausa, Hindi, Igbo, Portuguese
+                    (Brazil), Russian, Spanish, Urdu, and Yoruba.
+                  </li>
+                  <li className="text-[#A1A1AA] text-base leading-relaxed">
+                    <strong className="text-[#F4F4F5]">Quiz engine</strong> —
+                    content-driven quizzes tied to devotional progress with
+                    leaderboard tracking.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      WhatsApp-first communication
+                      Three-tier admin dashboard
                     </strong>{" "}
-                    — primary channel for fee reminders and notifications, with
-                    seamless SMS fallback when WhatsApp delivery is unavailable.
+                    — bulk Excel upload pipelines, individual devotional
+                    creation, role-based admin management, and content moderation
+                    tools.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Paystack payments
+                      Email notification system
                     </strong>{" "}
-                    — direct subscription billing for schools, parent fee
-                    collection with reconciliation back to the platform.
+                    — daily devotional delivery via scheduled jobs across
+                    timezones.
                   </li>
                 </ul>
               </div>
             </FadeIn>
 
-            {/* Inline screenshot: dashboard */}
+            {/* Inline screenshot: admin dashboard */}
             <FadeIn delay={0.12}>
               <ImageLightbox
-                src="/screenshots/schoologa-dashboard.png"
-                alt="SchoolOga owner dashboard"
-                caption="Real-time owner dashboard with daily collection totals and staff tracking"
-              />
-            </FadeIn>
-
-            {/* Inline screenshot: fees */}
-            <FadeIn delay={0.13}>
-              <ImageLightbox
-                src="/screenshots/schoologa-fees.png"
-                alt="SchoolOga fee intelligence module"
-                caption="Fee intelligence module with collection tracking and cash flow projection"
+                src="/screenshots/daily-manna-admin.png"
+                alt="Daily Manna three-tier admin dashboard"
+                caption="Three-tier admin dashboard for bulk content management across 12+ languages"
               />
             </FadeIn>
 
@@ -191,12 +188,26 @@ export default function SchoolOgaPage() {
                   The outcome
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
-                  Live in production with first beta school onboarded. Tracking
-                  ₦6.4M+ in term fees, monitoring 67 outstanding accounts, and
-                  active staff pattern detection across multiple roles.
-                  Go-to-market through NAPPS Lagos referral network.
+                  Live in production, serving millions of daily users across
+                  every continent. Sustained traffic at backend capacity.
+                  Multi-language deployment active. Powering the daily devotional
+                  life of one of the largest faith networks in the world.
                 </p>
               </div>
+            </FadeIn>
+
+            <FadeIn delay={0.18}>
+              <p className="font-mono text-sm text-[#A1A1AA]">
+                View the live product →{" "}
+                <a
+                  href="https://www.dailymanna.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-underline text-[#7CFFB2] hover:text-[#5DEBA0] transition-colors duration-200"
+                >
+                  dailymanna.app
+                </a>
+              </p>
             </FadeIn>
           </div>
 
@@ -220,12 +231,12 @@ export default function SchoolOgaPage() {
                     Link
                   </p>
                   <a
-                    href="https://schoologa.tech"
+                    href="https://www.dailymanna.app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link-underline font-sans text-sm text-[#7CFFB2] hover:text-[#5DEBA0] transition-colors duration-200"
                   >
-                    schoologa.tech →
+                    dailymanna.app →
                   </a>
                 </div>
               </div>
@@ -236,12 +247,12 @@ export default function SchoolOgaPage() {
         {/* Next case study */}
         <FadeIn delay={0.1}>
           <div className="mt-20 pt-10 border-t border-[#1F1F23]">
-            <Link href="/work/daily-manna" className="group block">
+            <Link href="/work/healthcare-network" className="group block">
               <span className="font-mono text-xs text-[#52525B] uppercase tracking-widest">
                 Next case study
               </span>
               <p className="font-sans font-medium text-2xl text-[#F4F4F5] tracking-tight mt-2 group-hover:text-[#7CFFB2] transition-colors duration-200">
-                Daily Manna →
+                Healthcare Network →
               </p>
             </Link>
           </div>

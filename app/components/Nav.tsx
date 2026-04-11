@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/work", label: "Work" },
-  { href: "/services", label: "Services" },
+  { href: "/approach", label: "Approach" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -32,19 +32,19 @@ export default function Nav() {
         {/* Wordmark */}
         <Link
           href="/"
-          className="text-[#F4F4F5] font-sans font-medium text-base tracking-tight hover:text-[#7CFFB2] transition-colors duration-200"
+          className="text-[#F4F4F5] font-sans font-medium text-base tracking-tight lowercase"
         >
           striat
         </Link>
 
-        {/* Nav links */}
+        {/* Nav links + CTA */}
         <nav className="flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`nav-link font-mono text-sm tracking-wide transition-colors duration-200 ${
-                pathname === link.href
+              className={`nav-link hidden sm:block font-mono text-sm uppercase tracking-widest transition-colors duration-200 ${
+                pathname === link.href || pathname.startsWith(link.href + "/")
                   ? "text-[#F4F4F5]"
                   : "text-[#A1A1AA] hover:text-[#F4F4F5]"
               }`}
@@ -53,26 +53,15 @@ export default function Nav() {
             </Link>
           ))}
 
-          {/* Email icon */}
-          <a
-            href="mailto:hello@striat.dev"
-            aria-label="Email us"
-            className="text-[#52525B] hover:text-[#A1A1AA] transition-colors duration-200"
+          <Link
+            href="/contact"
+            className="font-mono text-sm text-[#7CFFB2] hover:text-[#5DEBA0] transition-colors duration-200 tracking-wide"
           >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.25"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <rect x="1" y="3" width="14" height="10" rx="1.5" />
-              <path d="M1 4.5l7 5 7-5" />
-            </svg>
-          </a>
+            Start a project{" "}
+            <span className="inline-block ml-1" aria-hidden="true">
+              →
+            </span>
+          </Link>
         </nav>
       </div>
     </header>
