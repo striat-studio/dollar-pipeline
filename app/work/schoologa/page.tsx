@@ -191,7 +191,7 @@ export default function SchoolOgaPage() {
                   The outcome
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
-                  Live in production with first beta school onboarded. Tracking
+                  Live in production with schools onboarded. Tracking
                   ₦6.4M+ in term fees, monitoring 67 outstanding accounts, and
                   active staff pattern detection across multiple roles.
                   Go-to-market through NAPPS Lagos referral network.
