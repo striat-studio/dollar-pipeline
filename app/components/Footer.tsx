@@ -38,10 +38,10 @@ export default function Footer() {
           {/* Right: email + status */}
           <div>
             <a
-              href="mailto:hello@striat.dev"
+              href="mailto:dave@striat.dev"
               className="link-underline font-mono text-sm text-[#A1A1AA] hover:text-[#F4F4F5] transition-colors duration-200 inline-block mb-4"
             >
-              hello@striat.dev
+              dave@striat.dev
             </a>
             <div className="flex items-center gap-2">
               <span className="relative flex h-2 w-2">

@@ -75,7 +75,7 @@ export default function ContactPage() {
                     Working with teams in
                   </p>
                   <p className="font-sans text-sm text-[#A1A1AA]">
-                    United States · United Kingdom · Canada · Australia · Brazil
+                    North America · Europe · Australia · Latin America
                   </p>
                 </div>
 

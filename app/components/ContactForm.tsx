@@ -151,10 +151,10 @@ export default function ContactForm() {
           We will reply within 24 hours. In the meantime, you can reach us
           directly at{" "}
           <a
-            href="mailto:hello@striat.dev"
+            href="mailto:dave@striat.dev"
             className="text-[#F4F4F5] hover:text-[#7CFFB2] transition-colors duration-200"
           >
-            hello@striat.dev
+            dave@striat.dev
           </a>
         </p>
       </div>
@@ -401,10 +401,10 @@ export default function ContactForm() {
             <p className="font-mono text-xs text-[#52525B] mt-1">
               If this keeps failing, email us directly at{" "}
               <a
-                href="mailto:hello@striat.dev"
+                href="mailto:dave@striat.dev"
                 className="text-[#A1A1AA] hover:text-[#F4F4F5] transition-colors duration-200"
               >
-                hello@striat.dev
+                dave@striat.dev
               </a>
             </p>
           </div>
@@ -449,10 +449,10 @@ export default function ContactForm() {
       <p className="font-mono text-xs text-[#52525B] text-center">
         Or email us directly at{" "}
         <a
-          href="mailto:hello@striat.dev"
+          href="mailto:dave@striat.dev"
           className="text-[#A1A1AA] hover:text-[#F4F4F5] transition-colors duration-200"
         >
-          hello@striat.dev
+          dave@striat.dev
         </a>
       </p>
     </form>
