@@ -244,9 +244,27 @@ export default function DailyMannaPage() {
           </FadeIn>
         </div>
 
+        {/* Build-story callout */}
+        <FadeIn delay={0.08}>
+          <div className="mt-20">
+            <Link
+              href="/blog/how-i-built-daily-manna"
+              className="group block border border-[#1F1F23] bg-[#111113] rounded-[6px] px-6 py-6 md:px-8 md:py-7 hover:border-[#2A2A2E] transition-colors duration-200"
+            >
+              <p className="font-mono text-xs text-[#52525B] uppercase tracking-widest mb-2">
+                Want the full build story?
+              </p>
+              <p className="font-sans font-medium text-lg md:text-xl text-[#F4F4F5] tracking-tight group-hover:text-[#7CFFB2] transition-colors duration-200">
+                Read &quot;How I built the backend, solo, while millions
+                waited&quot; →
+              </p>
+            </Link>
+          </div>
+        </FadeIn>
+
         {/* Next case study */}
         <FadeIn delay={0.1}>
-          <div className="mt-20 pt-10 border-t border-[#1F1F23]">
+          <div className="mt-12 pt-10 border-t border-[#1F1F23]">
             <Link href="/work/healthcare-network" className="group block">
               <span className="font-mono text-xs text-[#52525B] uppercase tracking-widest">
                 Next case study
