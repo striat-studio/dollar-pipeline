@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
 
     const body = await req.json();
 
-    // Honeypot — bots fill hidden fields
+    // Honeypot: bots fill hidden fields
     if (body.website) {
       return NextResponse.json({ success: true });
     }
@@ -92,7 +92,7 @@ export async function POST(req: NextRequest) {
       from: process.env.CONTACT_EMAIL_FROM!,
       to: process.env.CONTACT_EMAIL_TO!,
       replyTo: email,
-      subject: `New Striat inquiry — ${name} at ${companyDisplay}`,
+      subject: `New Striat inquiry: ${name} at ${companyDisplay}`,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; color: #1a1a1a;">
           <h2 style="font-size: 18px; font-weight: 600; margin-bottom: 24px;">

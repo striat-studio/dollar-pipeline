@@ -291,7 +291,7 @@ export default function ContactForm() {
           rows={4}
           value={data.message}
           onChange={set("message")}
-          placeholder="Tell us about your project — what you are building, what problem it solves, and any constraints."
+          placeholder="Tell us about your project: what you are building, what problem it solves, and any constraints."
           disabled={isSubmitting}
           aria-describedby={fieldErrors.message ? "message-error" : undefined}
           className={`w-full px-4 py-3 bg-[#111113] border ${fieldErrors.message ? "border-red-500/50 focus:border-red-400" : "border-[#1F1F23] focus:border-[#52525B]"} rounded-[4px] text-[#F4F4F5] font-sans text-sm placeholder:text-[#52525B] focus:outline-none transition-colors duration-200 resize-none leading-relaxed`}

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Engagements Striat has designed, built, and shipped. Real systems, real users, real outcomes.",
   openGraph: {
-    title: "Work — Striat",
+    title: "Work | Striat",
     description:
       "Three case studies. Real systems, real users, real outcomes.",
   },

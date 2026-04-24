@@ -6,11 +6,11 @@ import CaseStudyCard from "./components/CaseStudyCard";
 import StatBlock from "./components/StatBlock";
 
 export const metadata: Metadata = {
-  title: "Striat — Software Infrastructure Studio",
+  title: "Striat | Software Infrastructure Studio",
   description:
     "Striat is a small, senior engineering studio. We build production systems for founders and operators who need software that holds up under real load.",
   openGraph: {
-    title: "Striat — Software Infrastructure Studio",
+    title: "Striat | Software Infrastructure Studio",
     description:
       "Senior engineering studio. Production systems that survive growth.",
   },
@@ -42,7 +42,7 @@ export default function Home() {
           <p className="max-w-2xl text-xl text-[#A1A1AA] leading-relaxed mt-8">
             Striat is a small, senior engineering studio. We build production
             systems for founders and operators who need software that holds up
-            under real load — not prototypes that break the day a customer
+            under real load, not prototypes that break the day a customer
             arrives.
           </p>
         </FadeIn>
@@ -218,7 +218,7 @@ export default function Home() {
               meetings without an agenda. Every Striat engagement is scoped,
               priced flat, and delivered end-to-end with documentation and
               handover. You know exactly what you are getting before you sign
-              anything — and exactly what you own when we are done.
+              anything, and exactly what you own when we are done.
             </p>
           </FadeIn>
 

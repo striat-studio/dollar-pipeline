@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Accountability infrastructure for private schools. Pattern-based staff accountability, fee intelligence, and real-time financial visibility.",
   openGraph: {
-    title: "SchoolOga — Striat",
+    title: "SchoolOga | Striat",
     description: "Accountability infrastructure for private schools.",
   },
 };
@@ -61,7 +61,7 @@ export default function SchoolOgaPage() {
           <ImageLightbox
             src="/screenshots/schoologa-pattern.png"
             alt="SchoolOga pattern detection page"
-            caption="Pattern-based staff accountability — automated detection of lateness, GPS mismatches, and lesson note gaps"
+            caption="Pattern-based staff accountability: automated detection of lateness, GPS mismatches, and lesson note gaps"
           />
         </FadeIn>
       </section>
@@ -80,7 +80,7 @@ export default function SchoolOgaPage() {
                   Private schools across Nigeria run on paper, WhatsApp groups,
                   and manual tracking. Owners cannot see staff attendance in real
                   time. Fee collection is opaque and delayed. Accountability
-                  fails at the layer that matters most — whether teachers
+                  fails at the layer that matters most: whether teachers
                   actually showed up, taught, and submitted lesson notes.
                 </p>
               </div>
@@ -93,7 +93,7 @@ export default function SchoolOgaPage() {
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
                   Build a system that gives school owners genuine visibility into
-                  the day-to-day operations of their schools — not a dashboard
+                  the day-to-day operations of their schools, not a dashboard
                   that shows surface metrics, but an infrastructure layer that
                   detects bad patterns, flags exceptions, and forces
                   accountability without requiring the owner to be physically
@@ -118,49 +118,49 @@ export default function SchoolOgaPage() {
                 <ul className="space-y-4">
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Pattern-based staff accountability
+                      Pattern-based staff accountability:
                     </strong>{" "}
-                    — automated detection of consistent lateness, location
+                    automated detection of consistent lateness, location
                     mismatches via GPS verification, lesson note gaps, and admin
                     override attempts. Severity tiers (warning, critical) with
                     resolution workflow.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Fee intelligence
+                      Fee intelligence:
                     </strong>{" "}
-                    — term collection tracking, cash flow projection at current
+                    term collection tracking, cash flow projection at current
                     pace, outstanding balance management with class and sibling
                     grouping, automated parent reminders via WhatsApp and SMS
                     fallback.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Real-time owner dashboard
+                      Real-time owner dashboard:
                     </strong>{" "}
-                    — daily collection totals, staff present count, term
+                    daily collection totals, staff present count, term
                     progress, recent activity feed with auto-refresh.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Multi-role access
+                      Multi-role access:
                     </strong>{" "}
-                    — owner, principal, head teacher, secretary, with
+                    owner, principal, head teacher, secretary, with
                     role-scoped permissions and audit logging on every sensitive
                     action.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      WhatsApp-first communication
+                      WhatsApp-first communication:
                     </strong>{" "}
-                    — primary channel for fee reminders and notifications, with
+                    primary channel for fee reminders and notifications, with
                     seamless SMS fallback when WhatsApp delivery is unavailable.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Paystack payments
+                      Paystack payments:
                     </strong>{" "}
-                    — direct subscription billing for schools, parent fee
+                    direct subscription billing for schools, parent fee
                     collection with reconciliation back to the platform.
                   </li>
                 </ul>

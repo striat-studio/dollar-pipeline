@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FadeIn from "../../components/FadeIn";
+import SectionNav from "./SectionNav";
 
 export const metadata: Metadata = {
   title:
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
     "A case study on shipping global infrastructure from Lagos, in a stack I already knew, under real pressure.",
   openGraph: {
     title:
-      "How I built the backend for Daily Manna, solo, while millions waited — Striat",
+      "How I built the backend for Daily Manna, solo, while millions waited | Striat",
     description:
       "A case study on shipping global infrastructure from Lagos, in a stack I already knew, under real pressure.",
   },
@@ -74,7 +75,7 @@ export default function DailyMannaBuildStoryPage() {
         <div className="md:grid md:grid-cols-[1fr_240px] lg:grid-cols-[1fr_280px] md:gap-12 lg:gap-16">
           {/* Content column */}
           <FadeIn delay={0.08}>
-            <div className="max-w-[720px] border-t border-[#1F1F23] pt-14 text-[#A1A1AA] text-[17px] leading-[1.8] space-y-6">
+            <div className="max-w-[720px] border-t border-[#1F1F23] pt-14 text-[#C5C5C8] text-[17px] leading-[1.8] space-y-6">
               <p>
                 Easter Sunday, 2026. I hit deploy at around 2 AM Lagos time,
                 knowing that by sunrise Monday morning, millions of people
@@ -473,25 +474,9 @@ export default function DailyMannaBuildStoryPage() {
             </div>
           </FadeIn>
 
-          {/* Sticky section nav (desktop only) */}
+          {/* Sticky section nav with scrollspy (desktop only) */}
           <aside className="hidden md:block">
-            <div className="sticky top-24 pt-14">
-              <p className="font-mono text-xs text-[#52525B] uppercase tracking-widest mb-4">
-                Sections
-              </p>
-              <ul className="border-l border-[#1F1F23]">
-                {sections.map((s) => (
-                  <li key={s.id}>
-                    <a
-                      href={`#${s.id}`}
-                      className="block pl-4 py-1.5 font-sans text-sm text-[#A1A1AA] hover:text-[#F4F4F5] hover:border-l hover:border-[#7CFFB2] hover:-ml-px transition-colors duration-200"
-                    >
-                      {s.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <SectionNav sections={sections} />
           </aside>
         </div>
 

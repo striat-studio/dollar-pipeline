@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Start a conversation with Striat. Tell us what you are building. We respond within 24 hours.",
   openGraph: {
-    title: "Contact — Striat",
+    title: "Contact | Striat",
     description: "Tell us what you are building. Response within 24 hours.",
   },
 };

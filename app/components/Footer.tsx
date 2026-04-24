@@ -50,7 +50,7 @@ export default function Footer() {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7CFFB2]" />
               </span>
               <span className="font-mono text-xs text-[#A1A1AA]">
-                Available — May 2026
+                Available · May 2026
               </span>
             </div>
           </div>

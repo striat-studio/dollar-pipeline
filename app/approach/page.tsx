@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "How Striat works. Scoped, flat-rate, end-to-end delivery. No retainers, no hourly billing.",
   openGraph: {
-    title: "Approach — Striat",
+    title: "Approach | Striat",
     description: "Scoped. Flat-rate. End-to-end.",
   },
 };

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Backend infrastructure for a global Bible devotional platform serving millions of users daily across every continent.",
   openGraph: {
-    title: "Daily Manna — Striat",
+    title: "Daily Manna | Striat",
     description:
       "Backend infrastructure for a global Bible devotional platform.",
   },
@@ -91,7 +91,7 @@ export default function DailyMannaPage() {
                   The challenge
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
-                  The platform needed to be rebuilt from the ground up — a
+                  The platform needed to be rebuilt from the ground up: a
                   backend that could serve a global audience reading devotionals,
                   completing daily Bible plans, joining community groups, and
                   tracking progress across multiple devotional series for adults,
@@ -109,8 +109,8 @@ export default function DailyMannaPage() {
                   The work
                 </h2>
                 <p className="text-[#A1A1AA] text-base leading-relaxed mb-6">
-                  Striat designed and built the entire backend from scratch —
-                  single-handedly — replacing the legacy WordPress system with a
+                  Striat designed and built the entire backend from scratch,
+                  single-handedly, replacing the legacy WordPress system with a
                   modern Node.js and MongoDB architecture serving both the web
                   platform and the mobile app from a single API.
                 </p>
@@ -120,53 +120,53 @@ export default function DailyMannaPage() {
                 <ul className="space-y-4">
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Multi-tier devotional engine
+                      Multi-tier devotional engine:
                     </strong>{" "}
-                    — Daily Manna for adults, Higher Everyday for youth, Sincere
+                    Daily Manna for adults, Higher Everyday for youth, Sincere
                     Milk for children, with separate content workflows and
                     reading paths.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Bible reading plan system
+                      Bible reading plan system:
                     </strong>{" "}
-                    — structured multi-week plans with subscription tracking,
+                    structured multi-week plans with subscription tracking,
                     progress persistence, and resume-where-you-left-off logic
                     across devices.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Community groups (MannaHaven)
+                      Community groups (MannaHaven):
                     </strong>{" "}
-                    — users can form groups with friends, share progress, and
+                    users can form groups with friends, share progress, and
                     engage around devotional content.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Internationalization
+                      Internationalization:
                     </strong>{" "}
-                    — full support for twelve-plus languages including Arabic,
+                    full support for twelve-plus languages including Arabic,
                     Bengali, Chinese, French, Hausa, Hindi, Igbo, Portuguese
                     (Brazil), Russian, Spanish, Urdu, and Yoruba.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
-                    <strong className="text-[#F4F4F5]">Quiz engine</strong> —
+                    <strong className="text-[#F4F4F5]">Quiz engine:</strong>{" "}
                     content-driven quizzes tied to devotional progress with
                     leaderboard tracking.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Three-tier admin dashboard
+                      Three-tier admin dashboard:
                     </strong>{" "}
-                    — bulk Excel upload pipelines, individual devotional
+                    bulk Excel upload pipelines, individual devotional
                     creation, role-based admin management, and content moderation
                     tools.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Email notification system
+                      Email notification system:
                     </strong>{" "}
-                    — daily devotional delivery via scheduled jobs across
+                    daily devotional delivery via scheduled jobs across
                     timezones.
                   </li>
                 </ul>

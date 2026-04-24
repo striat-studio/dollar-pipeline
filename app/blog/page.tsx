@@ -6,9 +6,9 @@ import FadeIn from "../components/FadeIn";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Essays on shipping production systems — what worked, what didn't, and what I'd do differently.",
+    "Essays on shipping production systems: what worked, what didn't, and what I'd do differently.",
   openGraph: {
-    title: "Blog — Striat",
+    title: "Blog | Striat",
     description: "Essays on shipping production systems.",
   },
 };
@@ -38,7 +38,7 @@ export default function BlogIndexPage() {
             Notes from the build.
           </h1>
           <p className="text-xl text-[#A1A1AA] leading-relaxed max-w-2xl">
-            Essays on shipping production systems — what worked, what
+            Essays on shipping production systems: what worked, what
             didn&apos;t, and what I&apos;d do differently.
           </p>
         </FadeIn>

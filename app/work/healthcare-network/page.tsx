@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Full-stack healthcare coordination platform with end-to-end financial integration.",
   openGraph: {
-    title: "Healthcare Network — Striat",
+    title: "Healthcare Network | Striat",
     description:
       "Full-stack healthcare coordination platform with end-to-end financial integration.",
   },
@@ -93,9 +93,9 @@ export default function HealthcareNetworkPage() {
                 <p className="text-[#A1A1AA] text-base leading-relaxed">
                   Striat was brought in to take ownership of the entire build and
                   deliver a production system. The platform needed to handle the
-                  full clinical workflow — patient appointment requests, doctor
+                  full clinical workflow: patient appointment requests, doctor
                   scheduling, lab and imaging coordination, staff management,
-                  role-based access across clinical and administrative tiers —
+                  role-based access across clinical and administrative tiers,
                   and integrate directly with the network&apos;s existing QuickBooks
                   accounting system for revenue tracking, invoice management, and
                   financial reporting.
@@ -118,44 +118,44 @@ export default function HealthcareNetworkPage() {
                 </p>
                 <ul className="space-y-4">
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
-                    <strong className="text-[#F4F4F5]">Patient portal</strong>{" "}
-                    — appointment booking, medical record access, test result
+                    <strong className="text-[#F4F4F5]">Patient portal:</strong>{" "}
+                    appointment booking, medical record access, test result
                     delivery, and patient login.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Clinical workflow
+                      Clinical workflow:
                     </strong>{" "}
-                    — doctor schedules, sonography coordination, lab tech
+                    doctor schedules, sonography coordination, lab tech
                     routing, multi-stage care pathways.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Staff management
+                      Staff management:
                     </strong>{" "}
-                    — role-based access for doctors, nurses, lab techs,
+                    role-based access for doctors, nurses, lab techs,
                     sonographers, admin staff, and ownership tier.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Financial integration
+                      Financial integration:
                     </strong>{" "}
-                    — direct QuickBooks API integration for invoice creation,
+                    direct QuickBooks API integration for invoice creation,
                     payment tracking, revenue reporting, and reconciliation.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Real-time admin dashboard
+                      Real-time admin dashboard:
                     </strong>{" "}
-                    — total revenue tracking, daily/weekly/monthly breakdowns,
+                    total revenue tracking, daily/weekly/monthly breakdowns,
                     paid versus pending invoices, critical alerts, and inventory
                     monitoring.
                   </li>
                   <li className="text-[#A1A1AA] text-base leading-relaxed">
                     <strong className="text-[#F4F4F5]">
-                      Notification system
+                      Notification system:
                     </strong>{" "}
-                    — multi-channel alerts for appointments, payments, and
+                    multi-channel alerts for appointments, payments, and
                     operational events.
                   </li>
                 </ul>
@@ -167,7 +167,7 @@ export default function HealthcareNetworkPage() {
               <ImageLightbox
                 src="/screenshots/healthcare-portal.jpg"
                 alt="Anonymized patient portal interface"
-                caption="Anonymized patient portal — appointment booking, medical records, and test result delivery"
+                caption="Anonymized patient portal: appointment booking, medical records, and test result delivery"
               />
             </FadeIn>
 
@@ -206,7 +206,7 @@ export default function HealthcareNetworkPage() {
                     Link
                   </p>
                   <p className="font-sans text-sm text-[#52525B] italic">
-                    Not public — confidential
+                    Not public · confidential
                   </p>
                 </div>
               </div>

@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Striat — Software Infrastructure Studio",
-    template: "%s — Striat",
+    default: "Striat | Software Infrastructure Studio",
+    template: "%s | Striat",
   },
   description:
     "Striat is a small, senior engineering studio. We build production systems for founders and operators who need software that holds up under real load.",
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
     siteName: "Striat",
     locale: "en_US",
     type: "website",
-    title: "Striat — Software Infrastructure Studio",
+    title: "Striat | Software Infrastructure Studio",
     description:
       "Senior engineering studio. Production systems that survive growth.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Striat — Software Infrastructure Studio",
+    title: "Striat | Software Infrastructure Studio",
     description:
       "Senior engineering studio. Production systems that survive growth.",
   },
