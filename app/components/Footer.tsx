@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AvailabilityStatus from "./AvailabilityStatus";
 
 export default function Footer() {
   return (
@@ -49,9 +50,7 @@ export default function Footer() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#7CFFB2] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7CFFB2]" />
               </span>
-              <span className="font-mono text-xs text-[#A1A1AA]">
-                Available · May 2026
-              </span>
+              <AvailabilityStatus />
             </div>
           </div>
         </div>
@@ -64,7 +63,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/david-ariyo-123da/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -86,7 +85,7 @@ export default function Footer() {
             </a>
             {/* X / Twitter */}
             <a
-              href="https://x.com"
+              href="https://x.com/DavidAriyoDev"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X"
