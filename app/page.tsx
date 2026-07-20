@@ -3,6 +3,7 @@ import Link from "next/link";
 import SectionLabel from "./components/SectionLabel";
 import FadeIn from "./components/FadeIn";
 import CaseStudyCard from "./components/CaseStudyCard";
+import AvailabilityMonth from "./components/AvailabilityMonth";
 import StatBlock from "./components/StatBlock";
 
 export const metadata: Metadata = {
@@ -255,7 +256,7 @@ export default function Home() {
               </span>
             </div>
             <p className="font-sans font-medium text-xl md:text-2xl text-[#F4F4F5] tracking-tight mb-4">
-              Currently accepting one new engagement for May 2026.
+              Currently accepting one new engagement for <AvailabilityMonth />.
             </p>
             <p className="text-[#A1A1AA] text-base mb-10">
               Response within 24 hours.

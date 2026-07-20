@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import SectionLabel from "../components/SectionLabel";
 import FadeIn from "../components/FadeIn";
 import ContactForm from "../components/ContactForm";
+import AvailabilityMonth from "../components/AvailabilityMonth";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -55,7 +56,7 @@ export default function ContactPage() {
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-[#7CFFB2]" />
                   </span>
                   <span className="font-sans text-sm text-[#A1A1AA]">
-                    Accepting one new engagement for May 2026
+                    Accepting one new engagement for <AvailabilityMonth />
                   </span>
                 </div>
               </div>
@@ -75,7 +76,7 @@ export default function ContactPage() {
                     Working with teams in
                   </p>
                   <p className="font-sans text-sm text-[#A1A1AA]">
-                    North America · Europe · Australia · Latin America
+                    Africa · North America · Europe · Australia · Latin America
                   </p>
                 </div>
 

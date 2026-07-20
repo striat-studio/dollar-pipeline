@@ -22,6 +22,7 @@ const caseStudies = [
       "Backend infrastructure for a global Bible devotional platform serving millions of users daily across every continent.",
     stack: "Node.js · Express · MongoDB · Multi-language · 12+ locales",
     href: "/work/daily-manna",
+    live: "https://www.dailymanna.app",
     screenshot: "/screenshots/dailymanna-home.png",
     alt: "Daily Manna homepage with language dropdown",
   },
@@ -32,6 +33,7 @@ const caseStudies = [
       "Full-stack healthcare coordination platform with patient access, appointment management, and end-to-end financial integration.",
     stack: "TypeScript · Node.js · PostgreSQL · Sequelize · QuickBooks API",
     href: "/work/healthcare-network",
+    live: null,
     screenshot: "/screenshots/healthcare-admin.jpg",
     alt: "Healthcare network admin revenue dashboard",
   },
@@ -42,6 +44,7 @@ const caseStudies = [
       "School management infrastructure for private schools. Pattern-based staff accountability, fee intelligence, and real-time financial visibility for owners.",
     stack: "Next.js 14 · Express · MongoDB · BullMQ · Paystack · WhatsApp Business API",
     href: "/work/schoologa",
+    live: "https://schoologa.tech",
     screenshot: "/screenshots/schoologa-pattern.png",
     alt: "SchoolOga pattern detection page",
   },
@@ -100,12 +103,24 @@ export default function WorkPage() {
                 <p className="font-mono text-xs text-[#52525B] leading-loose mb-6">
                   {cs.stack}
                 </p>
-                <Link
-                  href={cs.href}
-                  className="link-underline font-mono text-sm text-[#7CFFB2] hover:text-[#5DEBA0] transition-colors duration-200"
-                >
-                  Read case study →
-                </Link>
+                <div className="flex flex-wrap items-center gap-6">
+                  <Link
+                    href={cs.href}
+                    className="link-underline font-mono text-sm text-[#7CFFB2] hover:text-[#5DEBA0] transition-colors duration-200"
+                  >
+                    Read case study →
+                  </Link>
+                  {cs.live && (
+                    <a
+                      href={cs.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-underline font-mono text-sm text-[#A1A1AA] hover:text-[#F4F4F5] transition-colors duration-200"
+                    >
+                      Visit site →
+                    </a>
+                  )}
+                </div>
               </div>
             </FadeIn>
           ))}
