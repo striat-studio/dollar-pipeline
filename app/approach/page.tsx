@@ -57,21 +57,21 @@ const engagementModels = [
     description:
       "A complete first version of your product, designed and shipped from scratch in one to three weeks. For founders validating a market, teams running internal experiments, or operators who need a tool shipped before a deadline.",
     timeline: "1–3 weeks",
-    investment: "From $10K, flat rate, quoted per project",
+    investment: "Scoped per project",
   },
   {
     title: "Business Infrastructure",
     description:
       "Backend systems, integration layers, payment infrastructure, WhatsApp business automation, and the unglamorous plumbing that real businesses run on. For teams that have outgrown templates and need something built properly.",
     timeline: "2–4 weeks",
-    investment: "From $12K, flat rate, quoted per project",
+    investment: "Scoped per project",
   },
   {
     title: "Custom Systems",
     description:
       "Internal tools, dashboards, admin platforms, and bespoke systems built to spec. For teams whose problems do not fit any off-the-shelf product.",
     timeline: "2–6 weeks",
-    investment: "Quoted per engagement, starting at $15K",
+    investment: "Scoped per project",
   },
 ];
 

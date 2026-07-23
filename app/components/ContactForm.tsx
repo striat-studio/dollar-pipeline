@@ -363,32 +363,14 @@ export default function ContactForm() {
         </div>
       </div>
 
-      {/* Investment range */}
+      {/* Investment note */}
       <div>
-        <label
-          htmlFor="contact-investment"
-          className="block font-mono text-xs text-[#52525B] uppercase tracking-widest mb-2"
-        >
-          Investment range
-        </label>
-        <div className="relative">
-          <select
-            id="contact-investment"
-            value={data.investment}
-            onChange={set("investment")}
-            disabled={isSubmitting}
-            className={selectClass}
-          >
-            <option value="" disabled>
-              Select range
-            </option>
-            <option value="10k-20k">$10K–$20K</option>
-            <option value="20k-50k">$20K–$50K</option>
-            <option value="50k+">$50K+</option>
-            <option value="open">Open to discussion</option>
-          </select>
-          <ChevronDown />
-        </div>
+        <p className="block font-mono text-xs text-[#52525B] uppercase tracking-widest mb-2">
+          Investment
+        </p>
+        <p className="font-sans text-sm text-[#A1A1AA]">
+          Engagements are scoped per project.
+        </p>
       </div>
 
       {/* Submit */}

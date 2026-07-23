@@ -91,10 +91,10 @@ export default function ContactPage() {
 
                 <div>
                   <p className="font-mono text-xs text-[#52525B] uppercase tracking-widest mb-1.5">
-                    Engagement minimum
+                    Pricing
                   </p>
                   <p className="font-sans text-sm text-[#A1A1AA]">
-                    From $10,000
+                    Engagements are scoped per project
                   </p>
                 </div>
               </div>
